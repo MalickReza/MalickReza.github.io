@@ -17,3 +17,18 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+#skills {
+    width: 100%;
+    min-height: 100%;
+}
+
+#portfolio {
+    width: 100%;
+    min-height: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    padding-top: 6rem;
+}
