@@ -42,5 +42,3 @@ function initViz(project) {
 $(".nav-icon").each(function() {
     $(this).attr("href", links[$(this).attr("aria-label")]);
 });
-
-$("#resume").attr("href", getRelativePath(window.location.pathname.substring(1), links["resume"]));
