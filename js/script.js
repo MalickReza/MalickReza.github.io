@@ -23,4 +23,4 @@ $(".nav-icon").each(function() {
     $(this).attr("href", links[$(this).attr("aria-label")]);
 });
 
-$("#resume").attr("href", "//" + links["resume"]);
+$("#resume").attr("href", window.location.protocol + "//" + window.location.hostname + "/" + links["resume"]);
