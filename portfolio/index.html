@@ -79,62 +79,15 @@
             </div>
 
             <div class="container portfolio-container text-center my-3">
-                <div class="row no-gutters justify-content-center">
-                    <div class="mix tableau col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="viz/telco-customer-churn.html" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/telco-customer-churn.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">Telco Customer Churn</h4>
-                        </a>
-                    </div>
-                    <div class="mix jupyter col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="../assets/jupyter/Capstone_2_Telco_Customer_Churn_Revised.pdf" target="_blank" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/capstone-2-telco-customer-churn-revised.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">Capstone 2 Telco Customer Churn Revised</h4>
-                        </a>
-                    </div>
-                    <div class="mix tableau col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="viz/heart-failure-prediction.html" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/heart-failure-prediction.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">Heart Failure Prediction</h4>
-                        </a>
-                    </div>
-                    <div class="mix tableau col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="viz/chemcorp-case.html" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/chemcorp-case.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">ChemCorp Case</h4>
-                        </a>
-                    </div>
-                    <div class="mix tableau col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="viz/new-york-city-airbnb.html" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/new-york-city-airbnb.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">New York City Airbnb</h4>
-                        </a>
-                    </div>
-                    <div class="mix tableau col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="viz/ibm-employee-attrition-analytics.html" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/ibm-employee-attrition-analytics.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">IBM Employee Attrition Analytics</h4>
-                        </a>
-                    </div>
-                    <div class="mix jupyter col-12 col-md-4 portfolio-item-wrapper p-2">
-                        <a href="../assets/jupyter/Southern_Water_Corp_OLS_Case_Study_Student_Facing.pdf" target="_blank" class="m-1 portfolio-item shadow">
-                            <img class="portfolio-item-img" src="../assets/images/southern-water-corp-ols-case-study-student-facing.png">
-                            <span class="portfolio-item-overlay"></span>
-                            <h4 class="portfolio-item-heading d-flex align-items-center justify-content-center">Southern Water Corp OLS Case Study</h4>
-                        </a>
-                    </div>
-                </div>
+                <div class="row no-gutters justify-content-center" id="portfolio-row"></div>
             </div>
         </div>
 
         <!-- My script -->
         <script type="text/javascript" src="../js/script.js"></script>
+        <script>
+            makePortfolioCards();
+        </script>
 
         <!-- Bootstrap scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
