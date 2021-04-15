@@ -9,6 +9,26 @@ var portfolio = [
     
 ];
 
+function getRelativePath(pathFrom, pathTo) {
+    var fromArr = pathFrom.split("/"),
+        toArr = pathTo.split("/"),
+        index = -1,
+        relPath = "";
+    for (var i=0; i<fromArr.length; i++) {
+        if (fromArr[i] != toArr[i]) {
+            index = i;
+            break;
+        }
+    }
+    if (index == -1) {
+        return "./" + pathTo;
+    }
+    for (var i=0; i<(fromArr.length-index-1); i++) {
+        relPath += "../";
+    }
+    return relPath + pathTo;
+}
+
 function setNavLink(element, key) {
     element.href = links[key];
 }
@@ -23,4 +43,4 @@ $(".nav-icon").each(function() {
     $(this).attr("href", links[$(this).attr("aria-label")]);
 });
 
-$("#resume").attr("href", window.location.protocol + "//" + window.location.hostname + "/" + links["resume"]);
+$("#resume").attr("href", getRelativePath(window.location.pathname.substring(1), links["resume"]));
