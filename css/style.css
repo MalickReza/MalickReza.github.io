@@ -5,22 +5,51 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .nav-icon {
     font-size: 1.25rem;
 }
 
+#resume {
+    border: 1px solid #343a40;
+    color: #343a40;
+}
+
+#resume:hover {
+    background-color: #343a40;
+    color: white;
+}
+
 #home {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #skills {
     width: 100%;
     min-height: 100%;
+}
+
+.skills-btn:hover, .skills-btn.mixitup-control-active {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.skills-heading {
+    color: #343a40;
+    font-size: 1rem;
+}
+
+.skills-icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #343a40;
 }
 
 #portfolio {

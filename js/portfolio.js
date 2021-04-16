@@ -1,3 +1,14 @@
+var portfolioFilters = [
+    {
+        "title": "Tableau",
+        "data-filter": "tableau"
+    },
+    {
+        "title": "Jupyter",
+        "data-filter": "jupyter"
+    }
+];
+
 var portfolio = [
     {
         "title": "Telco Customer Churn",
@@ -50,6 +61,17 @@ var portfolio = [
     }
 ];
 
+function makePortfolioControls() {
+    if (portfolioFilters.length > 0) {
+        $("#portfolio-controls").append("<button type='button' class='btn portfolio-btn mx-1' data-filter='all'>All</button>");
+    }
+    for (var i=0; i<portfolioFilters.length; i++) {
+        var item = portfolioFilters[i];
+        var element = "<button type='button' class='btn portfolio-btn mx-1' data-filter='." + item["data-filter"] + "'>" + item["title"] + "</button>";
+        $("#portfolio-controls").append(element);
+    }
+}
+
 function makePortfolioCards() {
     for (var i=0; i<portfolio.length; i++) {
         var item = portfolio[i];
@@ -61,4 +83,5 @@ function makePortfolioCards() {
     }
 }
 
+makePortfolioControls();
 makePortfolioCards();

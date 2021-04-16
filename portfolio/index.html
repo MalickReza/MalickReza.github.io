@@ -63,7 +63,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-outline-primary my-2 my-sm-0 ml-2 d-none d-lg-inline-block" type="button" href="../assets/Resume.pdf" target="_blank">Resume</a>
+            <a class="btn my-2 my-sm-0 ml-2 d-none d-lg-inline-block" id="resume" type="button" target="_blank">Resume</a>
         </nav>
 
         <div id="portfolio">
@@ -71,14 +71,8 @@
                 <h1>Portfolio</h1>
                 <p>View my work below</p>
             </div>
-
-            <div class="controls container text-center">
-                <button type="button" class="btn portfolio-btn" data-filter="all">All</button>
-                <button type="button" class="btn portfolio-btn" data-filter=".tableau">Tableau</button>
-                <button type="button" class="btn portfolio-btn" data-filter=".jupyter">Jupyter</button>
-            </div>
-
-            <div class="container portfolio-container text-center my-3">
+            <div class="controls container text-center" id="portfolio-controls"></div>
+            <div class="container text-center my-3" id="portfolio-container">
                 <div class="row no-gutters justify-content-center" id="portfolio-row"></div>
             </div>
         </div>
@@ -102,8 +96,7 @@
         <!-- Mixitup -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous"></script>
         <script>
-            var containerEl = document.querySelector(".portfolio-container");
-            var mixer = mixitup(containerEl);
+            mixitup("#portfolio-container");
         </script>
 
     </body>
