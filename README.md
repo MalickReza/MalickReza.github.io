@@ -25,6 +25,7 @@ var portfolioFilters = [
 
 E.g. If you want to add a filter called `Python`, the variable `portfolioFilters` would look like
 
+```
 var portfolioFilters = [
     {
         "title": "Tableau",
