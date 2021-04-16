@@ -19,4 +19,4 @@ $(".nav-icon").each(function() {
     $(this).attr("href", links[$(this).attr("aria-label")]);
 });
 
-$("#resume").attr("href", links["resume"]);
+$(".resume-link").attr("href", links["resume"]);

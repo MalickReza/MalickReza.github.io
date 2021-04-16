@@ -11,12 +11,12 @@ html, body {
     font-size: 1.25rem;
 }
 
-#resume {
+.resume-btn {
     border: 1px solid #343a40;
     color: #343a40;
 }
 
-#resume:hover {
+.resume-btn:hover {
     background-color: #343a40;
     color: white;
 }
