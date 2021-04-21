@@ -83,5 +83,13 @@ function makePortfolioCards() {
     }
 }
 
-makePortfolioControls();
-makePortfolioCards();
+function makePortfolioOverview() {
+    for (var i=0; i<3; i++) {
+        var item = portfolio[i];
+        var element = "<div class='col-12 col-md-6 col-lg-4 portfolio-item-wrapper p-2'>";
+        element += "<a href='portfolio/" + item["href"] +"' target='" + item["target"] + "' class='m-1 portfolio-item shadow'>";
+        element += "<img class='portfolio-item-img' src='" + item["img"].substring(3) + "'><span class='portfolio-item-overlay'></span>"
+        element += "<h4 class='portfolio-item-heading d-flex align-items-center justify-content-center'>" + item["title"] + "</h4></a></div>";
+        $("#portfolio-row").append(element);
+    }
+}

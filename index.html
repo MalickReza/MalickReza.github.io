@@ -70,12 +70,16 @@
             <div class="text-center">
                 <h1>Malick Reza</h1>
                 <p>Welcome to my site!</p>
+                <a class="btn home-btn" href="#portfolio-overview">View my work&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
 
         <div id="portfolio-overview" class="text-center">
             <h2>Portfolio Overview</h2>
-            <p>View all projects</p>
+            <p>View all projects <a href="portfolio/index.html">here</a>.</p>
+            <div class="container text-center my-3">
+                <div class="row no-gutters justify-content-center" id="portfolio-row"></div>
+            </div>
         </div>
 
         <footer class="footer">
@@ -87,6 +91,10 @@
 
         <!-- My script -->
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/portfolio.js"></script>
+        <script>
+            makePortfolioOverview();
+        </script>
 
         <!-- Bootstrap scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
