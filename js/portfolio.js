@@ -11,13 +11,6 @@ var portfolioFilters = [
 
 var portfolio = [
     {
-        "title": "Global Supermarket Dashboard",
-        "filter": "tableau",
-        "img": "../assets/images/global-supermarket-dashboard.png",
-        "href": "viz/global-supermarket-dashboard.html",
-        "target": "_self"
-    },
-    {
         "title": "Telco Customer Churn",
         "filter": "tableau",
         "img": "../assets/images/telco-customer-churn.png",
